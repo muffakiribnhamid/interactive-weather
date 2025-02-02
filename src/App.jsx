@@ -87,7 +87,7 @@ function App() {
   const searchTimeoutRef = useRef(null);
   const videoRef = useRef(null);
 
-  const API_KEY = '1bbbe481addd454fa40150903231302';
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   // Enhanced particle system
   const createParticles = useCallback((type, config) => {
